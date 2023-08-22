@@ -164,8 +164,8 @@ char *DCSP_CORE::TensorProcess(clock_t &starttime_1, cv::Mat &iImg, N &blob, std
 
             float *data = (float *) rowData.data;
 
-            float x_factor = iImg.cols / 640.;
-            float y_factor = iImg.rows / 640.;
+            float x_factor = iImg.cols / 416.;
+            float y_factor = iImg.rows / 416.;
             for (int i = 0; i < strideNum; ++i) {
                 float *classesScores = data + 4;
                 cv::Mat scores(1, this->classes.size(), CV_32FC1, classesScores);

@@ -8,7 +8,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-option(USE_CUDA "Enable CUDA support" ON)
+option(USE_CUDA "Enable CUDA support" OFF)
 include_directories(${PROJECT_NAME} ./include)
 
 set(PROJECT_SOURCES

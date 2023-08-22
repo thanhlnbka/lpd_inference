@@ -34,7 +34,7 @@ enum MODEL_TYPE {
 typedef struct _DCSP_INIT_PARAM {
     std::string ModelPath;
     MODEL_TYPE ModelType = YOLO_ORIGIN_V8;
-    std::vector<int> imgSize = {640, 640};
+    std::vector<int> imgSize = {416, 416};
     float RectConfidenceThreshold = 0.4;
     float iouThreshold = 0.5;
     bool CudaEnable = false;
